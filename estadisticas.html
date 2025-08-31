@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas</title>
+    <link rel="stylesheet" href="assets/estadisticas.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+</head>
+<body>
+
+     <header class="header">
+        <h1>Lo quieres, te lo vendo</h1>
+        <nav class="main__navbar">
+            <ul class="main__navbar--list">
+                <li class="main__navbar--list--item"><a href="index.html">Inicio</a></li>
+                <li class="main__navbar--list--item"><a href="contacto.html">Contacto</a></li>
+                <li class="main__navbar--list--item"><a href="estadisticas.html">Estadísticas</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Tabla de Productos</h1>
+        <table id="miTabla" class="display">
+            <thead>
+                <tr>
+                    <th>ID Producto</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Unidades</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Laptop</td>
+                    <td>Electrónica</td>
+                    <td>$1200</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Teclado</td>
+                    <td>Accesorios</td>
+                    <td>$75</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Mouse</td>
+                    <td>Accesorios</td>
+                    <td>$25</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Celular</td>
+                    <td>Electrónica</td>
+                    <td>$300</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Audifonos</td>
+                    <td>Accesorios</td>
+                    <td>$40</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>Tablet</td>
+                    <td>Electrónica</td>
+                    <td>$25</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td>USB</td>
+                    <td>Otros</td>
+                    <td>$10</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>08</td>
+                    <td>PS5</td>
+                    <td>Electrónica</td>
+                    <td>$900</td>
+                    <td>5   </td>
+                </tr>
+                <tr>
+                    <td>09</td>
+                    <td>Nintendo Switch</td>
+                    <td>Electrónica</td>
+                    <td>$25</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Xbox</td>
+                    <td>Electrónica</td>
+                    <td>$800</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <script>
+        $(document).ready(function() {
+            $('#miTabla').DataTable();
+        });
+    </script>
+</body>
+</html>

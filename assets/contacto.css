@@ -1,3 +1,5 @@
+/* Si cree que esta echo con IA cree mal */
+
 body{
     margin: 0;
     padding: 0;
@@ -7,7 +9,6 @@ body{
     flex-direction: column;
 }
 
-/* Header section */
 
 .header {
     background-color: #333;
@@ -22,8 +23,6 @@ body{
     margin: 0;
     padding: 1rem;
 }
-
-/* Main Section */
 
 .main__navbar {
     background-color: #48e;
@@ -69,12 +68,20 @@ body{
     background-color: #ededed;
 }
 
-/* formulario */
+
 .form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
     background-color: #fff;
     padding: 1rem;
     border-radius: 6px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: 70vh;
+    max-height: 100%;
+    min-height: auto;
+    min-width: 80%;
 }
 
 .form__container h3 {
@@ -86,14 +93,14 @@ body{
     color: #333;
     font-size: 0.8em;
     justify-content: flex-start;
-    margin: 0.75em 0;
+    margin: 0;
 }
 
 
 .form__container input {
     display: flex;
     justify-content: start;
-    min-width: 100%;
+    min-width: 100%;    
 }
 
 .form__container button {
@@ -107,8 +114,16 @@ body{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.form__container button:hover {
+    background-color: #fff;
+    color: #48e;
+    border: 2px solid #48e;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
 
-/* Footer section */
+
+
 footer {
     background-color: #333;
     color: #fff;
@@ -126,4 +141,56 @@ footer {
         max-width: 900px;
         margin: 0 auto;
     }
+
+    .main__container{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        text-align: center;
+        background-color: #ededed;
+    }
+
+
+    .form__container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        height: 70vh;
+        max-height: 100%;
+        min-height: auto;
+        min-width: 50%;
+    }
+
+    .form__container h3 {
+        font-size: 1.8em;
+    }
+
+    .form__container input {
+        max-width: 90vh;
+        min-width: auto;
+        margin: 0 50px;
+        padding-bottom: 10px;
+    }
+
+    .form__container button {
+        max-width: 20vh;
+        min-width: auto;
+        margin: 0 50px;
+        font-size: 1em;
+        font-weight: 600px;
+    }
+
+
+    .form__container label {
+        font-size: 1.08em;
+        margin: 0 50px;
+        font-weight: 500px;
+    }
+
 }

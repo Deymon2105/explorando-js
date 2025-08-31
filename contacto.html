@@ -8,12 +8,12 @@
 </head>
 <body>
     <header class="header">
-        <h1>Lo que quieres, te lo vendo</h1>
+        <h1>Lo quieres, te lo vendo</h1>
         <nav class="main__navbar">
             <ul class="main__navbar--list">
                 <li class="main__navbar--list--item"><a href="index.html">Inicio</a></li>
                 <li class="main__navbar--list--item"><a href="#">Contacto</a></li>
-                <li class="main__navbar--list--item"><a href="#">Sección 3</a></li>
+                <li class="main__navbar--list--item"><a href="estadisticas.html">Estadísticas</a></li>
             </ul>
         </nav>
     </header>
@@ -22,12 +22,12 @@
         <form class="form__container">
             <h3>Formulario de Contacto</h3>
             <label>Correo</label>
-            <input class="email" type="email">
+            <input id="email" class="email" type="email">
             <label>Teléfono</label>
-            <input class="tel" type="tel">
+            <input id="tel" class="tel" type="tel">
             <label>Descripción</label>
-            <input class="text" type="text">
-            <button class="submit" type="submit">Enviar </button>
+            <input id="descripcion" class="descripcion" type="text">
+            <button id="buttonSubmit" class="submit" type="submit" onclick="sendForm()">Enviar </button>
         </form>
     </main>
 
